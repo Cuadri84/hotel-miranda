@@ -1,0 +1,204 @@
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0 1rem;
+  z-index: 5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+  transition: top 1s;
+
+  .header__container {
+    display: flex;
+    padding-right: 0.5rem;
+    align-items: center;
+    gap: 2rem;
+
+    .nav-bar {
+      .nav-bar__burger-menu {
+        width: 50px;
+        height: 30px;
+        position: relative;
+        align-self: center;
+        padding: 0 1rem 1rem 0;
+        cursor: pointer;
+
+        #span1,
+        #span2,
+        #span3 {
+          position: absolute;
+          content: "";
+          background-color: #000;
+          width: 30px;
+          height: 3px;
+          border-radius: 3px;
+          transition: all 400ms ease;
+        }
+
+        #span2 {
+          top: 11px;
+        }
+        #span3 {
+          top: 22px;
+        }
+      }
+
+      .nav-bar__container {
+        position: fixed;
+        left: 0;
+        top: 70px;
+        bottom: 70%;
+        height: 30%;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+        padding: 1rem;
+        clip-path: circle(0 at top);
+        transition: 0.5s all ease-in-out;
+
+        .nav-bar__ul li {
+          padding: 1rem;
+          list-style-type: none;
+          a {
+            font-family: "Archivo", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 17px;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .nav-bar__container.active {
+        clip-path: circle(100% at top);
+      }
+
+      .nav-bar__burger-menu.animation #span1 {
+        transform: rotate(140deg);
+        top: 10px;
+      }
+      .nav-bar__burger-menu.animation #span2 {
+        opacity: 0;
+      }
+      .nav-bar__burger-menu.animation #span3 {
+        transform: rotate(-140deg);
+        top: 10px;
+      }
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      .logo-sm__container {
+        background: #fff;
+        box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+        width: 40px;
+        height: 40px;
+        position: relative;
+
+        .logo-sm {
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          top: 10px;
+          left: 8px;
+        }
+      }
+
+      .logo__lg {
+        padding-top: 0.5rem;
+        width: 75px;
+        height: 50px;
+      }
+    }
+
+    .icon-container {
+      padding-top: 0.5rem;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 120px;
+    box-shadow: none;
+    padding: 0 2rem;
+    position: fixed;
+    top: 40px;
+    left: 11%;
+
+    .header__container {
+      .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .nav-bar__container {
+          clip-path: circle(100% at top);
+          width: 50%;
+          height: 70px;
+          position: absolute;
+          top: 23px;
+          left: 226px;
+          box-shadow: none;
+          .nav-bar__ul {
+            display: flex;
+            gap: 1rem;
+
+            & li {
+              & a {
+                font-family: "Archivo", sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 17px;
+                color: #000;
+                margin-right: 2rem;
+              }
+            }
+          }
+        }
+
+        .nav-bar__burger-menu {
+          display: none;
+        }
+      }
+
+      .icon-container {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border: 2px solid rgba(133, 133, 133, 0.3);
+        gap: 1rem;
+
+        .icon {
+          position: absolute;
+          top: 18px;
+          left: 18px;
+        }
+      }
+    }
+  }
+}
