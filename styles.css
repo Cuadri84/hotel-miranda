@@ -157,6 +157,9 @@
     display: flex;
     gap: 1rem;
   }
+  .header .header__container .nav-bar .nav-bar__container .nav-bar__ul li {
+    padding: 0.7rem;
+  }
   .header .header__container .nav-bar .nav-bar__container .nav-bar__ul li a {
     font-family: "Archivo", sans-serif;
     font-style: normal;
