@@ -2,6 +2,10 @@
 @import "./scss/footer";
 @import "./scss/variables";
 @import "./scss/index";
+@import "./scss/contact";
+@import "./scss/about";
+@import "./scss/offers";
+@import "./scss/room-details";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,4 +13,60 @@
 }
 body {
   min-width: 320px;
+}
+.not-swiper {
+  display: none;
+}
+.not-swiper-home {
+  display: none;
+}
+.swiper {
+  width: 380px;
+  height: 380px;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: 50%;
+  width: 335px;
+  height: 335px;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.swiper-pagination-bullet {
+  background: $beige-dark;
+}
+@media screen and (min-width: 1000px) {
+  .swiper {
+    display: none;
+  }
+  .not-swiper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 90px;
+    margin-bottom: 120px;
+    & img {
+      width: 470px;
+      height: 300px;
+    }
+  }
+  .not-swiper-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 90px;
+    margin-bottom: 120px;
+    & img {
+      width: 370px;
+      height: 370px;
+    }
+  }
 }

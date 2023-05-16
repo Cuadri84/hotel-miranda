@@ -9,9 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    <div id="we-make-div"><p id="we-make">We Make You Feel Comfortable</p></div>
     <header class="header" id="header">
       <div class="header__container">
         <div class="nav-bar">
@@ -199,7 +204,7 @@
             <div class="room__information">
               <div class="room__information__container">
                 <div>
-                  <h4>Full Duplex</h4>
+                  <h4>Standard Duplex</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore.
@@ -216,7 +221,7 @@
             <div class="room__information">
               <div class="room__information__container">
                 <div>
-                  <h4>Standard Duplex</h4>
+                  <h4>Suite</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore.
@@ -233,7 +238,7 @@
             <div class="room__information">
               <div class="room__information__container">
                 <div>
-                  <h4>Sea View Duplex</h4>
+                  <h4>Luxury Room</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore.
@@ -376,128 +381,273 @@
         </div>
       </div>
     </section>
-    <section class="facilities">
+    <section class="core">
       <h3>Facilities</h3>
       <h2>Core Features</h2>
-      <div class="facilities_grid">
-        <div class="facilities__item">
-          <img
-            class="facilities__icon--number"
-            src="./assets/icons/home/coreFeatures/numbers/1.svg"
-            alt="Facility 1"
-          />
-          <img
-            class="facilities__icon"
-            src="./assets/icons/home/coreFeatures/icons/1.svg"
-            alt="Facilities"
-          />
-          <h4>Have High Rating</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
-          <div class="facilities__slider-dots facilities__slider-dots--hidden">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+      <div class="swiper core__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide core__card">
+            <div class="card__icons">
+              <img
+                class="core__card__icon"
+                src="./assets/index/core/hand.png"
+                alt="Facilities"
+              />
+              <img
+                class="core__card__icon--number"
+                src="./assets/index/core/01.png"
+                alt="Facility 1"
+              />
+            </div>
+            <div class="card__texts">
+              <h4>Have High Rating</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide core__card">
+            <div class="card__icons">
+              <img
+                class="core__card__icon"
+                src="./assets/index/core/clock.png"
+                alt="Facilities"
+              />
+              <img
+                class="core__card__icon--number"
+                src="./assets/index/core/02.png"
+                alt="Facility 1"
+              />
+            </div>
+            <div class="card__texts">
+              <h4>Quiet Hours</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide core__card">
+            <div class="card__icons">
+              <img
+                class="core__card__icon"
+                src="./assets/index/core/maps-core.png"
+                alt="Facilities"
+              />
+              <img
+                class="core__card__icon--number"
+                src="./assets/index/core/03.png"
+                alt="Facility 1"
+              />
+            </div>
+            <div class="card__texts">
+              <h4>Best Locations</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide core__card">
+            <div class="card__icons">
+              <img
+                class="core__card__icon"
+                src="./assets/index/core/clock-cancel.png"
+                alt="Facilities"
+              />
+              <img
+                class="core__card__icon--number"
+                src="./assets/index/core/04.png"
+                alt="Facility 1"
+              />
+            </div>
+            <div class="card__texts">
+              <h4>Free Cancellation</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide core__card">
+            <div class="card__icons">
+              <img
+                class="core__card__icon"
+                src="./assets/index/core/card.png"
+                alt="Facilities"
+              />
+              <img
+                class="core__card__icon--number"
+                src="./assets/index/core/05.png"
+                alt="Facility 1"
+              />
+            </div>
+            <div class="card__texts">
+              <h4>Payment Options</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide core__card">
+            <div class="card__icons">
+              <img
+                class="core__card__icon"
+                src="./assets/index/core/ribbon.png"
+                alt="Facilities"
+              />
+              <img
+                class="core__card__icon--number"
+                src="./assets/index/core/06.png"
+                alt="Facility 1"
+              />
+            </div>
+            <div class="card__texts">
+              <h4>Special Offers</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
           </div>
         </div>
-        <div class="facilities__item facilities__item--hidden">
-          <img
-            class="facilities__icon--number"
-            src="./assets/icons/home/coreFeatures/numbers/2.svg"
-            alt="Facility 2"
-          />
-          <img
-            class="facilities__icon"
-            src="./assets/icons/home/coreFeatures/icons/2.svg"
-            alt="Facilities"
-          />
-          <h4>Quiet Hours</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="core__grid">
+        <div class="swiper-slide core__card">
+          <div class="card__icons">
+            <img
+              class="core__card__icon"
+              src="./assets/index/core/hand.png"
+              alt="Facilities"
+            />
+            <img
+              class="core__card__icon--number"
+              src="./assets/index/core/01.png"
+              alt="Facility 1"
+            />
+          </div>
+          <div class="card__texts">
+            <h4>Have High Rating</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
         </div>
-        <div class="facilities__item facilities__item--hidden">
-          <img
-            class="facilities__icon--number"
-            src="./assets/icons/home/coreFeatures/numbers/3.svg"
-            alt="Facility 3"
-          />
-          <img
-            class="facilities__icon"
-            src="./assets/icons/home/coreFeatures/icons/3.svg"
-            alt="Facilities"
-          />
-          <h4>Best Locations</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+        <div class="swiper-slide core__card">
+          <div class="card__icons">
+            <img
+              class="core__card__icon"
+              src="./assets/index/core/clock.png"
+              alt="Facilities"
+            />
+            <img
+              class="core__card__icon--number"
+              src="./assets/index/core/02.png"
+              alt="Facility 1"
+            />
+          </div>
+          <div class="card__texts">
+            <h4>Quiet Hours</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
         </div>
-        <div class="facilities__item facilities__item--hidden">
-          <img
-            class="facilities__icon--number"
-            src="./assets/icons/home/coreFeatures/numbers/4.svg"
-            alt="Facility 4"
-          />
-          <img
-            class="facilities__icon"
-            src="./assets/icons/home/coreFeatures/icons/4.svg"
-            alt="Facilities"
-          />
-          <h4>Free Cancellation</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+        <div class="swiper-slide core__card">
+          <div class="card__icons">
+            <img
+              class="core__card__icon"
+              src="./assets/index/core/maps-core.png"
+              alt="Facilities"
+            />
+            <img
+              class="core__card__icon--number"
+              src="./assets/index/core/03.png"
+              alt="Facility 1"
+            />
+          </div>
+          <div class="card__texts">
+            <h4>Best Locations</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
         </div>
-        <div class="facilities__item facilities__item--hidden">
-          <img
-            class="facilities__icon--number"
-            src="./assets/icons/home/coreFeatures/numbers/5.svg"
-            alt="Facility 5"
-          />
-          <img
-            class="facilities__icon"
-            src="./assets/icons/home/coreFeatures/icons/5.svg"
-            alt="Facilities"
-          />
-          <h4>Payment Options</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+        <div class="swiper-slide core__card">
+          <div class="card__icons">
+            <img
+              class="core__card__icon"
+              src="./assets/index/core/clock-cancel.png"
+              alt="Facilities"
+            />
+            <img
+              class="core__card__icon--number"
+              src="./assets/index/core/04.png"
+              alt="Facility 1"
+            />
+          </div>
+          <div class="card__texts">
+            <h4>Free Cancellation</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
         </div>
-        <div class="facilities__item facilities__item--hidden">
-          <img
-            class="facilities__icon--number"
-            src="./assets/icons/home/coreFeatures/numbers/6.svg"
-            alt="Facility 6"
-          />
-          <img
-            class="facilities__icon"
-            src="./assets/icons/home/coreFeatures/icons/6.svg"
-            alt="Facilities"
-          />
-          <h4>Special Offers</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
-          </p>
+        <div class="swiper-slide core__card">
+          <div class="card__icons">
+            <img
+              class="core__card__icon"
+              src="./assets/index/core/card.png"
+              alt="Facilities"
+            />
+            <img
+              class="core__card__icon--number"
+              src="./assets/index/core/05.png"
+              alt="Facility 1"
+            />
+          </div>
+          <div class="card__texts">
+            <h4>Payment Options</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide core__card">
+          <div class="card__icons">
+            <img
+              class="core__card__icon"
+              src="./assets/index/core/ribbon.png"
+              alt="Facilities"
+            />
+            <img
+              class="core__card__icon--number"
+              src="./assets/index/core/06.png"
+              alt="Facility 1"
+            />
+          </div>
+          <div class="card__texts">
+            <h4>Special Offers</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna..
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section class="menu">
-      <img
-        class="menu-icon"
-        src="./assets/icons/home/donut.svg"
-        alt="Donut Icon"
-      />
+      <div class="donut-div">
+        <img class="donut" src="./assets/index/donut.png" alt="Donut Icon" />
+      </div>
       <h3>Menu</h3>
       <h2>Our Foods Menu</h2>
       <div class="menu__container">
@@ -628,31 +778,21 @@
           </div>
         </div>
       </div>
-      <div class="slider">
-        <div class="slider__container">
-          <img
-            class="slider__img"
-            src="./assets/images/home/hotel-food.jpg"
-            alt="Hotel Food"
-          />
-          <img
-            class="slider__img slider__img--hidden"
-            src="./assets/images/home/hotel-food2.jpg"
-            alt="Hotel Food"
-          />
-          <img
-            class="slider__img slider__img--hidden"
-            src="./assets/images/home/hotel-food3.jpg"
-            alt="Hotel Food"
-          />
-        </div>
-        <div class="menu__slider-dots">
-          <span class="dot"></span>
-          <span class="dot active"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
     </section>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="./assets/index/foods/food1.jpg" alt="" />
+        <img class="swiper-slide" src="./assets/index/foods/food2.jpg" alt="" />
+        <img class="swiper-slide" src="./assets/index/foods/food3.jpg" alt="" />
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="not-swiper-home">
+      <img class="swiper-slide" src="./assets/index/foods/food1.jpg" alt="" />
+      <img class="swiper-slide" src="./assets/index/foods/food2.jpg" alt="" />
+      <img class="swiper-slide" src="./assets/index/foods/food3.jpg" alt="" />
+    </div>
+
     <div class="featured">
       <div class="featured-container">
         <img src="./assets/index/rocket.png" alt="Rocket Icon" />
@@ -782,5 +922,6 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./scripts/scripts.js"></script>
 </html>

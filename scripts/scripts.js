@@ -8,7 +8,7 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("animation");
 });
 
-//header hiden when scrolled
+//Header hiden when scrolled
 let initialScroll = window.scrollY;
 
 window.addEventListener("scroll", function () {
@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
   if (width > 1000 && initialScroll >= newScroll) {
     document.getElementById("header").style.top = "40px";
   } else if (width > 1000 && initialScroll <= newScroll) {
-    document.getElementById("header").style.top = "-120px";
+    document.getElementById("header").style.top = "-140px";
   }
 
   if (width < 1000) {
@@ -26,4 +26,14 @@ window.addEventListener("scroll", function () {
   }
 
   initialScroll = newScroll;
+});
+
+//DOTS ---------------
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });

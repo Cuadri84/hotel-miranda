@@ -1,0 +1,234 @@
+.main {
+  .about__container {
+    position: relative;
+    display: block;
+    background: $grey-dark;
+    color: $white;
+    align-items: flex-d;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    height: 265px;
+
+    h3 {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.813rem;
+      line-height: 18px;
+      text-align: left;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      color: $white;
+      padding: 2rem 0 1rem 0;
+    }
+    h2 {
+      font-family: $font-title;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5rem;
+      line-height: 3.75rem;
+      letter-spacing: -1.2px;
+      color: $black-text;
+      text-align: left;
+      padding-top: 0.5rem;
+      color: $white;
+    }
+
+    .page-navigation {
+      width: 156px;
+      height: 49px;
+      background: $white;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-right: 1.5rem;
+
+      .page-navitation__home,
+      p,
+      a {
+        font-family: $font-text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 17px;
+        letter-spacing: -0.48px;
+        color: $black;
+        text-decoration: none;
+      }
+
+      .page-navitation__contact {
+        color: $beige-light;
+      }
+    }
+  }
+}
+
+.detail__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5rem 2rem;
+  gap: 1rem;
+  position: relative;
+
+  img {
+    width: 40px;
+  }
+
+  .detail__item__info {
+    font-size: 18px;
+    line-height: 24px;
+    width: 200px;
+
+    h3 {
+      color: #222222;
+      font-family: $font-title;
+      padding-bottom: 10px;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: #777777;
+      font-style: normal;
+      font-family: $font-roboto;
+    }
+  }
+
+  .contact__list__number {
+    width: 224px;
+    height: 184px;
+    filter: invert(2%);
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    z-index: -4;
+  }
+}
+.form {
+  display: block;
+  padding: 1rem;
+  margin: 0 auto;
+
+  .form__item {
+    padding: 1rem;
+    background: #f8f8f8;
+    margin: 10px;
+
+    .form__input {
+      border: transparent;
+      padding: 1rem;
+      background: #f8f8f8;
+      padding-left: 20px;
+      width: 90%;
+    }
+  }
+  .message-div {
+    display: flex;
+    align-items: flex-start;
+  }
+  #message {
+    height: 170px;
+  }
+  #message::placeholder {
+    position: absolute;
+    bottom: 155px;
+  }
+
+  .button-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form__button {
+    margin-top: 1rem;
+    background: $beige-light;
+    font-family: $font-text;
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    padding: 1rem 2rem;
+    border: none;
+    height: 60px;
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    .about__container {
+      width: 80%;
+      padding-left: 15%;
+      height: 383px;
+
+      h3 {
+        padding-top: 130px;
+        font-size: 14px;
+        line-height: 15px;
+        padding-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -2.16px;
+      }
+
+      .page-navigation {
+        width: 200px;
+      }
+    }
+  }
+  .contact__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+  .detail__item {
+    padding-left: 80px;
+    img {
+      padding-right: 10px;
+    }
+    .contact__list__number {
+      width: 160px;
+      height: 130px;
+      top: 70px;
+      right: 5px;
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .form__item {
+        width: 470px;
+
+        &-full {
+          width: 970px;
+        }
+      }
+
+      &-column {
+        flex-direction: column;
+      }
+    }
+
+    .form__button {
+      margin-top: 1rem;
+      max-width: 258px;
+      height: 60px;
+    }
+  }
+}
