@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="../styles.css" />
   </head>
   <body>
@@ -410,34 +414,16 @@
           <img src="../assets/about/arrow.png" alt="Arrow Right Icon" />
         </div>
       </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper counter__images__container">
-          <div class="swiper-slide">
-            <img
-              class="counter__image"
-              src="../assets/images/about/counter_1.jpg"
-              alt="Happy Customers"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              class="counter__image"
-              src="../assets/images/about/counter_2.jpg"
-              alt="Wordwide Coverage"
-            />
-          </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" src="../assets/about/about1.jpg" alt="" />
+          <img class="swiper-slide" src="../assets/about/about2.jpg" alt="" />
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="counter-img">
-        <img
-          src="../assets/about/happy-guest.png"
-          alt="Happy Customer in the pool"
-        />
-        <img
-          src="../assets/about/happy-reception.jpg"
-          alt="Happy Customer at the reception"
-        />
+      <div class="not-swiper">
+        <img class="swiper-slide" src="../assets/about/about1.jpg" alt="" />
+        <img class="swiper-slide" src="../assets/about/about2.jpg" alt="" />
       </div>
     </section>
 
@@ -548,5 +534,6 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="../scripts/scripts.js"></script>
 </html>
