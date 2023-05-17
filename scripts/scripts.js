@@ -30,10 +30,18 @@ window.addEventListener("scroll", function () {
 
 //DOTS ---------------
 
-const swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".swiper", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+//Our foods navigation
+var swiper = new Swiper(".home__swiper__navigation", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });

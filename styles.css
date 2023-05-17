@@ -796,6 +796,112 @@
   right: -40px;
 }
 
+.menu {
+  padding-top: 100px;
+  position: relative;
+  padding: 1rem;
+}
+.menu h3 {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+.menu h2 {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: #222222;
+  padding: 1rem;
+}
+.menu .home__swiper__navigation {
+  position: relative;
+  height: 550px;
+  width: 90%;
+}
+.menu .home__swiper__navigation .swiper-wrapper {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+.menu .home__swiper__navigation .swiper-wrapper .menu__li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.menu .home__swiper__navigation .swiper-wrapper .menu__li .menu__li__img {
+  width: 120px;
+  height: 120px;
+}
+.menu .home__swiper__navigation .swiper-wrapper .menu__li .menu__li__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.menu .home__swiper__navigation .swiper-wrapper .menu__li .menu__li__info h4 {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.72px;
+  color: #222222;
+  padding: 0 1rem 0 2rem;
+}
+.menu .home__swiper__navigation .swiper-wrapper .menu__li .menu__li__info p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #222222;
+  padding: 0 1rem 0 2rem;
+}
+.menu .home__swiper__navigation .food-menu__swiper__button-container {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  width: 100px;
+  height: 200px;
+  padding: 1rem 0;
+  z-index: 15;
+}
+.menu .home__swiper__navigation .food-menu__swiper__button-container .swiper-button-prev--customized {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  bottom: 0;
+  left: -85px;
+  margin-left: 2rem;
+  background: #bdac8d;
+  color: #ffffff;
+}
+.menu .home__swiper__navigation .food-menu__swiper__button-container .swiper-button-next--customized {
+  position: absolute;
+  width: 52px;
+  right: 0;
+  bottom: 0;
+  height: 52px;
+  margin-right: 2rem;
+  background: #bdac8d;
+  color: #ffffff;
+}
+.menu .food-menu-responsive {
+  display: none;
+}
+.menu .slider__img {
+  display: none;
+}
+
 .featured {
   background: #222222;
 }
@@ -1007,6 +1113,101 @@
     width: 230px;
     left: 5%;
   }
+}
+@media screen and (min-width: 1000px) and (min-width: 1000px) {
+  .menu {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu .menu__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    position: relative;
+  }
+  .menu .menu__container .menu__li:hover {
+    background: #222222;
+  }
+  .menu .menu__container .menu__li:hover .right-arrow-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .menu .food-menu__swiper {
+    display: none;
+  }
+  .menu .food-menu-responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .menu .food-menu-responsive .menu__li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .menu .food-menu-responsive .menu__li .menu__li__img {
+    width: 120px;
+    height: 120px;
+  }
+  .menu .food-menu-responsive .menu__li .right-arrow-icon {
+    display: none;
+  }
+  .menu .food-menu-responsive .menu__li .menu__li__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .menu .food-menu-responsive .menu__li .menu__li__info h4 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.72px;
+    color: #222222;
+    padding: 0 1rem 0 2rem;
+  }
+  .menu .food-menu-responsive .menu__li .menu__li__info p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #222222;
+    padding: 0 1rem 0 2rem;
+  }
+  .menu .food-menu-responsive .menu__li:hover {
+    background: #222222;
+  }
+  .menu .food-menu-responsive .menu__li:hover h4,
+  .menu .food-menu-responsive .menu__li:hover p {
+    color: #ffffff;
+  }
+  .menu .food-menu-responsive .menu__li:hover .right-arrow-icon {
+    display: block;
+  }
+  .menu .home__swiper__navigation {
+    display: none;
+  }
+  .menu .food-slider {
+    display: none;
+  }
+  .menu .food-slider__responsive {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .menu .food-slider__responsive img {
+    width: 370px;
+    height: 370px;
+  }
+}
+@media screen and (min-width: 1000px) {
   .featured {
     width: 80%;
     padding: 1rem 2rem;
