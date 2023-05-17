@@ -1395,6 +1395,11 @@
   padding: 1rem;
   margin: 0 auto;
 }
+.form .hotel-img {
+  padding: 2%;
+  width: 100%;
+  max-width: 1050px;
+}
 .form .form__item {
   padding: 1rem;
   background: #f8f8f8;
