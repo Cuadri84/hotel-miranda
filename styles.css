@@ -2138,6 +2138,134 @@
     width: 90%;
     padding-bottom: 2rem;
   }
+  .popular-rooms {
+    background-color: #222222;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular-rooms h3 {
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 0.813rem;
+    line-height: 18px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+    padding: 2rem 0.5rem;
+  }
+  .popular-rooms h2 {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: white;
+    padding: 0.5rem;
+  }
+  #rooms__responisve-offers {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+  }
+  #rooms__responisve-offers .room-container {
+    width: 335px;
+    position: relative;
+    margin: 0 auto;
+  }
+  #rooms__responisve-offers .room-container .room__facilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 270px;
+    height: 40px;
+    position: absolute;
+    left: 30px;
+    top: 205px;
+    background: #ffffff;
+    z-index: 2;
+  }
+  #rooms__responisve-offers .room-container .room__facilities img {
+    height: 24px;
+    width: 24px;
+  }
+  #rooms__responisve-offers .room-container img {
+    width: 100%;
+    height: 100%;
+  }
+  #rooms__responisve-offers .room-container .room__information__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    height: 285px;
+    width: 100%;
+    background: #ffffff;
+  }
+  #rooms__responisve-offers .room-container .room__information__container h4 {
+    font-family: "Old Standard TT", serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -1.2px;
+    color: #222222;
+    padding: 1rem 0;
+  }
+  #rooms__responisve-offers .room-container .room__information__container p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #777777;
+    padding: 0 3rem;
+  }
+  #rooms__responisve-offers .room-container .room__information__container .price__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+  #rooms__responisve-offers .room-container .room__information__container .price__container .room__price {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 17px;
+    color: #bead8e;
+    text-align: center;
+    padding: 0;
+  }
+  #rooms__responisve-offers .room-container .room__information__container .price__container .boooking__button {
+    background: transparent;
+    border: none;
+  }
+  #rooms__responisve-offers .room-container .room__information__container .price__container .boooking__button a {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 17px;
+    color: #bdbdbd;
+  }
+  #rooms__responisve-offers .room-container .room__information__container .price__container button:hover span {
+    display: none;
+  }
+  #rooms__responisve-offers .room-container .room__information__container .price__container button:hover:before {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 17px;
+    color: #bdbdbd;
+    content: "Book Now!";
+  }
 }
 .page-navigation-details {
   width: 356px;
