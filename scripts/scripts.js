@@ -31,15 +31,16 @@ window.addEventListener("scroll", function () {
 //DOTS ---------------
 
 var swiper = new Swiper(".swiper", {
-  loop: true,
+  loop: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
 
-//Our foods navigation
+//Our foods navigation-----------
 var swiper = new Swiper(".home__swiper__navigation", {
+  loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
