@@ -1,3 +1,10 @@
+.main {
+  .about__container {
+    .page-navigation {
+      width: 150px;
+    }
+  }
+}
 .welcome {
   padding-top: 80px;
   .intro-video__item {
@@ -137,9 +144,6 @@
     }
   }
 }
-// .about-facilities {
-//   display: none;
-// }
 
 .counter {
   h3 {
@@ -213,25 +217,7 @@
 @media screen and (min-width: 1000px) {
   .main {
     .about__container {
-      width: 80%;
-      padding-left: 15%;
-      height: 353px;
-
-      h3 {
-        font-size: 14px;
-        line-height: 15px;
-        padding-bottom: 2rem;
-      }
-
-      h2 {
-        font-size: 72px;
-        line-height: 72px;
-        letter-spacing: -2.16px;
-      }
-
-      .page-navigation {
-        width: 200px;
-      }
+      width: 95%;
     }
   }
 

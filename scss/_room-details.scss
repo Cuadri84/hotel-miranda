@@ -1,66 +1,31 @@
-.about__container--detail {
-  position: relative;
-  display: block;
-  background: $grey-dark;
-  color: $white;
-  padding: 5rem 1rem 1rem 1rem;
-  gap: 1rem;
-  height: 355px;
+.page-navigation-details {
+  width: 356px;
+  height: 49px;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 1.5rem;
 
-  h3 {
+  .page-navitation__home,
+  p,
+  a {
     font-family: $font-text;
     font-style: normal;
     font-weight: 700;
-    font-size: 0.813rem;
-    line-height: 18px;
-    text-align: left;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    color: $white;
-    padding: 2rem 0 1rem 0;
-  }
-  h2 {
-    font-family: $font-title;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-    letter-spacing: -1.2px;
-    color: $black-text;
-    text-align: left;
-    padding-top: 0.5rem;
-    color: $white;
-    padding-right: 1rem;
+    font-size: 1rem;
+    line-height: 17px;
+    letter-spacing: -0.48px;
+    color: $black;
+    text-decoration: none;
   }
 
-  .page-navigation--detail {
-    width: 210px;
-    height: 49px;
-    background: $white;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    position: absolute;
-    right: 0;
-    margin-right: 1.5rem;
-    bottom: -2px;
-
-    .page-navitation__home,
-    p {
-      font-family: $font-text;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 17px;
-      letter-spacing: -0.48px;
-      color: $black;
-    }
-
-    // .page-navitation__current {
-    //   @extend .page-navitation__home;
-    //   color: $beige-light;
-    // }
+  .page-navitation__contact {
+    color: $beige-light;
   }
 }
 
@@ -439,15 +404,6 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .about__container--detail {
-    padding-left: 300px;
-    padding-top: 6rem;
-
-    .page-navigation--detail {
-      right: 150px;
-    }
-  }
-
   .main--detail {
     background: $white;
     padding: 0;
