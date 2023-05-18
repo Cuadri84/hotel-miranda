@@ -251,159 +251,141 @@
       color: #777777;
     }
   }
-
-  .related-rooms {
-    padding: 1rem 0.5rem;
-    h3 {
-      font-family: $font-title;
-      font-size: 30px;
-      line-height: 30px;
-      color: #222222;
-      padding: 1rem 0 2rem 1rem;
-    }
-
-    .swiper-detail {
-      position: relative;
-      overflow-x: hidden;
-
-      .swiper-slide {
-        width: 100%;
-        .room-container {
-          position: relative;
-          width: 335px;
-          margin: 0 auto;
-
-          .room__facilities {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 270px;
-            height: 40px;
-            position: absolute;
-            left: 30px;
-            top: 205px;
-            background: $white;
-            z-index: 2;
-
-            img {
-              height: 24px;
-              width: 24px;
-            }
-          }
-
-          img {
-            width: 100%;
-            height: 100%;
-          }
-
-          .room__information__container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-items: flex-start;
-            justify-content: center;
-            height: 285px;
-            width: 100%;
-            background: $white;
-
-            h4 {
-              font-family: $font-title;
-              text-align: center;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 1.75rem;
-              line-height: 2.25rem;
-              letter-spacing: -1.2px;
-              color: $black;
-              padding: 1rem 0;
-            }
-            p {
-              font-family: $font-roboto;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 1rem;
-              line-height: 1.5rem;
-              text-align: center;
-              color: $grey-text;
-              padding: 0 3rem;
-            }
-
-            .price__container {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 1rem 0;
-              gap: 1rem;
-              margin: 0 auto;
-
-              .room__price {
-                font-family: $font-text;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 1.2rem;
-                line-height: 17px;
-                color: $beige-light;
-                text-align: center;
-                padding: 0;
-              }
-
-              .boooking__button {
-                background: transparent;
-                border: none;
-
-                a {
-                  font-weight: 700;
-                  font-size: 1.2rem;
-                  line-height: 17px;
-                  color: #bdbdbd;
-                }
-              }
-
-              button:hover span {
-                display: none;
-              }
-
-              button:hover:before {
-                font-weight: 700;
-                font-size: 1.2rem;
-                line-height: 17px;
-                color: #bdbdbd;
-                content: "Book Now!";
-              }
-            }
-          }
-        }
-      }
-      .swiper-buttons__container {
-        .swiper-button-next {
-          position: absolute;
-          width: 52px;
-          top: 100px;
-          right: -4px;
-          height: 52px;
-          background: $beige-dark;
-          color: $white;
-        }
-        .swiper-button-prev {
-          position: absolute;
-          width: 52px;
-          height: 52px;
-          top: 100px;
-          left: -4px;
-          background: $white;
-          color: $black;
-        }
-      }
-    }
-
-    .rooms__responisve {
-      display: none;
-    }
-  }
+}
+#related {
+  position: absolute;
+  text-transform: capitalize;
+  left: 0;
+  padding: 1.5rem;
+  font-family: $font-title;
+  font-size: 30px;
+  line-height: 30px;
+  color: #222222;
+}
+#rooms__responisve {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
+  #rooms-details-offers-swiper {
+    display: none;
+  }
+
+  #rooms__responisve {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    padding-top: 2rem;
+
+    .room-container {
+      width: 335px;
+      position: relative;
+      margin: 0 auto;
+
+      .room__facilities {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 270px;
+        height: 40px;
+        position: absolute;
+        left: 30px;
+        top: 205px;
+        background: $white;
+        z-index: 2;
+
+        img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .room__information__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
+        height: 285px;
+        width: 100%;
+        background: $white;
+
+        h4 {
+          font-family: $font-title;
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.75rem;
+          line-height: 2.25rem;
+          letter-spacing: -1.2px;
+          color: $black;
+          padding: 1rem 0;
+        }
+        p {
+          font-family: $font-roboto;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: center;
+          color: $grey-text;
+          padding: 0 3rem;
+        }
+
+        .price__container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem 0;
+          gap: 1rem;
+          margin: 0 auto;
+
+          .room__price {
+            font-family: $font-text;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 17px;
+            color: $beige-light;
+            text-align: center;
+            padding: 0;
+          }
+
+          .boooking__button {
+            background: transparent;
+            border: none;
+
+            a {
+              font-weight: 700;
+              font-size: 1.2rem;
+              line-height: 17px;
+              color: #bdbdbd;
+            }
+          }
+
+          button:hover span {
+            display: none;
+          }
+
+          button:hover:before {
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 17px;
+            color: #bdbdbd;
+            content: "Book Now!";
+          }
+        }
+      }
+    }
+  }
+
   .main--detail {
     background: $white;
     padding: 0;
