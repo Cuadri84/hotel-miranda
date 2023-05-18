@@ -2074,6 +2074,10 @@
   background: #ffffff;
 }
 
+.popular-rooms {
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
   #detail__container {
     width: 80%;
