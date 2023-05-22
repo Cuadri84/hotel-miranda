@@ -2793,6 +2793,52 @@
     content: "Book Now!";
   }
 }
+.rooms-list-swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.rooms-list-swiper .rooms-list-swiper-wrapper .rooms-swiper-slide {
+  width: 335px;
+  height: 335px;
+  min-height: 20vh;
+}
+.rooms-list-swiper .rooms-list-swiper-wrapper .rooms-swiper-slide .room-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rooms-list-swiper .rooms-list-swiper-wrapper .rooms-swiper-slide .room-list-container .amenities-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rooms-list-swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+.rooms-list-swiper-pagination .swiper-pagination-bullet {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 0;
+  font-size: 1rem;
+  color: #000;
+  opacity: 1;
+  background: #ffffff;
+  padding-top: 1rem;
+}
+.rooms-list-swiper-pagination .swiper-pagination-bullet-active {
+  color: #ffffff;
+  background: #bead8e;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

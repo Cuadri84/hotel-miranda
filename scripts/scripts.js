@@ -46,3 +46,15 @@ var swiper = new Swiper(".home__swiper__navigation", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//ROOM pagination
+var swiper = new Swiper(".rooms-list-swiper", {
+  loop: false,
+  pagination: {
+    el: ".rooms-list-swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
