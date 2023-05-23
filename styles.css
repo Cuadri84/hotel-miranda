@@ -2794,36 +2794,112 @@
   }
 }
 .rooms-list-swiper {
-  width: 100%;
-  height: 100%;
-  margin-top: 60px;
-  margin-bottom: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 1660px;
+  margin-bottom: 1690px;
 }
-.rooms-list-swiper .rooms-list-swiper-wrapper .rooms-swiper-slide {
+.rooms-list-swiper .swiper-wrapper .swiper-slide {
   width: 335px;
   height: 335px;
   min-height: 20vh;
 }
-.rooms-list-swiper .rooms-list-swiper-wrapper .rooms-swiper-slide .room-list-container {
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 25px 0;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.rooms-list-swiper .rooms-list-swiper-wrapper .rooms-swiper-slide .room-list-container .amenities-title-container {
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container h4 {
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -1.2px;
+  color: #222222;
+  padding: 1rem 0;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #777777;
+  padding: 0 3rem;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .amenities-title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.rooms-list-swiper-pagination {
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .amenities-title-container .list-amanities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 270px;
+  height: 40px;
+  position: relative;
+  bottom: 20px;
+  background: #ffffff;
+  z-index: 2;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.15);
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .amenities-title-container .list-amanities img {
+  height: 24px;
+  width: 24px;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container .room__price {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 17px;
+  color: #bead8e;
+  text-align: center;
+  padding: 0;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container .boooking__button {
+  background: transparent;
+  border: none;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container .boooking__button a {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 17px;
+  color: #bdbdbd;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container button:hover span {
+  display: none;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container button:hover:before {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 17px;
+  color: #bdbdbd;
+  content: "Book Now!";
+}
+.rooms-list-swiper .swiper-pagination {
   display: flex;
   justify-content: center;
 }
-.rooms-list-swiper-pagination .swiper-pagination-bullet {
+.rooms-list-swiper .swiper-pagination .swiper-pagination-bullet {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -2834,7 +2910,7 @@
   background: #ffffff;
   padding-top: 1rem;
 }
-.rooms-list-swiper-pagination .swiper-pagination-bullet-active {
+.rooms-list-swiper .swiper-pagination .swiper-pagination-bullet-active {
   color: #ffffff;
   background: #bead8e;
 }
