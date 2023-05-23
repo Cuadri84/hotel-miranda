@@ -925,10 +925,14 @@
   height: 150px;
 }
 
-.donut {
+.donut-slice {
   position: absolute;
   width: 115px;
-  right: -40px;
+  right: 0px;
+}
+
+.donut {
+  display: none;
 }
 
 .menu {
@@ -963,17 +967,18 @@
 }
 .menu .home__swiper__navigation .swiper-wrapper {
   padding-bottom: 2rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 .menu .home__swiper__navigation .swiper-wrapper .menu__li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 4rem;
+  overflow: hidden;
 }
 .menu .home__swiper__navigation .swiper-wrapper .menu__li .menu__li__img {
   width: 120px;
-  height: 120px;
+  height: 100px;
 }
 .menu .home__swiper__navigation .swiper-wrapper .menu__li .menu__li__info {
   display: flex;
@@ -981,6 +986,7 @@
   align-items: center;
   align-items: flex-start;
   gap: 0.5rem;
+  height: 100px;
 }
 .menu .home__swiper__navigation .swiper-wrapper .menu__li .menu__li__info h4 {
   font-family: "Old Standard TT", serif;
@@ -1243,7 +1249,11 @@
     margin-top: 64px;
     height: 270px;
   }
+  .donut-slice {
+    display: none;
+  }
   .donut {
+    display: block;
     position: absolute;
     width: 230px;
     left: 5%;
@@ -1345,6 +1355,13 @@
 @media screen and (min-width: 1000px) {
   .rooms .swiper {
     display: block;
+  }
+  .rooms .ameneties-home {
+    width: 30%;
+  }
+  .rooms .home__swiper__navigation {
+    width: 50%;
+    height: 1000px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -2934,7 +2951,7 @@ body {
 }
 
 .swiper {
-  width: 380px;
+  width: 80%;
   height: 380px;
   margin-top: 60px;
   margin-bottom: 90px;
