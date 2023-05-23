@@ -2896,8 +2896,8 @@
   content: "Book Now!";
 }
 .rooms-list-swiper .swiper-pagination {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  top: 1620px;
 }
 .rooms-list-swiper .swiper-pagination .swiper-pagination-bullet {
   width: 50px;
