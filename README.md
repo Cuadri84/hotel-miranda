@@ -1,4 +1,4 @@
-# Hotel mi
+# Hotel Miranda
 
 **Hotel Miranda** is the client-side web application for making reservations and submitting comments. It is built using HTML, CSS, JavaScript, and Sass.
 
