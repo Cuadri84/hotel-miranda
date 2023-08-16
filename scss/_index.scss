@@ -875,6 +875,11 @@
       justify-content: space-between;
       padding: 2rem 0;
       margin-top: 2rem;
+      transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
+
+      &:hover {
+        transform: scale(1.1); /* Escala del 110% en el hover */
+      }
 
       .card__icons {
         .core__card__icon {
