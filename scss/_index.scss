@@ -89,6 +89,7 @@
           padding-bottom: 2rem;
           p {
             font-family: $font-roboto;
+            font-weight: 800;
             padding-bottom: 1rem;
           }
 
@@ -97,16 +98,17 @@
             justify-content: space-between;
             align-items: center;
             justify-content: flex-start;
-            p {
-              font-family: $font-roboto;
+            input {
+              border: none;
+              background-color: transparent;
               color: $grey-menu-dates;
               font-style: normal;
               font-weight: 400;
               font-size: 0.875rem;
               line-height: 1rem;
               padding-left: 10px;
-              padding-bottom: 0;
               width: 207px;
+              cursor: pointer;
             }
           }
 

@@ -502,6 +502,7 @@
 }
 .main .main__container--black .main-container-dates .main__container__date p {
   font-family: "Roboto", sans-serif;
+  font-weight: 800;
   padding-bottom: 1rem;
 }
 .main .main__container--black .main-container-dates .main__container__date .date {
@@ -510,16 +511,17 @@
   align-items: center;
   justify-content: flex-start;
 }
-.main .main__container--black .main-container-dates .main__container__date .date p {
-  font-family: "Roboto", sans-serif;
+.main .main__container--black .main-container-dates .main__container__date .date input {
+  border: none;
+  background-color: transparent;
   color: #686868;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1rem;
   padding-left: 10px;
-  padding-bottom: 0;
   width: 207px;
+  cursor: pointer;
 }
 .main .main__container--black .main-container-dates .main__container__date .line-divider {
   content: "";
