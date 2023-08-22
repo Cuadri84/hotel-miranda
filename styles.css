@@ -468,21 +468,25 @@
   padding: 1rem;
 }
 .main .main__container .btn-container .btn {
-  background: #bead8e;
+  background: transparent;
   font-family: "Archivo", sans-serif;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 0.875rem;
   line-height: 15px;
   letter-spacing: 2.8px;
   padding: 1rem 2rem;
   border: none;
   margin-bottom: 1rem;
-}
-.main .main__container .btn-container .btn--transparent {
-  background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.3294117647);
+  transition: background 0.3s, color 0.3s;
+}
+.main .main__container .btn-container .btn:hover {
+  background: #bead8e;
+  color: #ffffff;
+  cursor: pointer;
 }
 .main .main__container--black {
   background: #222222;
