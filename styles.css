@@ -2071,6 +2071,7 @@
   border: none;
   width: 216px;
   margin: 0 0 3rem 1rem;
+  cursor: pointer;
 }
 
 #popular-list {
@@ -2901,15 +2902,15 @@
   text-align: center;
   padding: 0;
 }
-.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container .boooking__button {
-  background: transparent;
-  border: none;
-}
-.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container .boooking__button a {
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container span {
   font-weight: 700;
   font-size: 1rem;
   line-height: 17px;
   color: #bdbdbd;
+}
+.rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container .boooking__button {
+  background: transparent;
+  border: none;
 }
 .rooms-list-swiper .swiper-wrapper .swiper-slide .list-container .room-list-container .price__container button:hover span {
   display: none;
@@ -2920,6 +2921,7 @@
   line-height: 17px;
   color: #bdbdbd;
   content: "Book Now!";
+  cursor: pointer;
 }
 .rooms-list-swiper .swiper-pagination {
   position: relative;

@@ -82,17 +82,15 @@
               text-align: center;
               padding: 0;
             }
-
+            span {
+              font-weight: 700;
+              font-size: 1rem;
+              line-height: 17px;
+              color: #bdbdbd;
+            }
             .boooking__button {
               background: transparent;
               border: none;
-
-              a {
-                font-weight: 700;
-                font-size: 1rem;
-                line-height: 17px;
-                color: #bdbdbd;
-              }
             }
 
             button:hover span {
@@ -105,6 +103,7 @@
               line-height: 17px;
               color: #bdbdbd;
               content: "Book Now!";
+              cursor: pointer;
             }
           }
         }
