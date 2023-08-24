@@ -1562,43 +1562,38 @@
   padding: 1rem;
   margin: 0 auto;
 }
-.form .hotel-img {
+
+.hotel-img {
   padding: 2%;
   width: 100%;
   max-width: 1050px;
 }
-.form .form__item {
+
+.form__item {
   padding: 1rem;
   background: #f8f8f8;
   margin: 10px;
 }
-.form .form__item .form__input {
+
+.form__input {
   border: transparent;
   padding: 1rem;
   background: #f8f8f8;
   padding-left: 20px;
   width: 90%;
 }
-.form .message-div {
-  display: flex;
-  align-items: flex-start;
-}
-.form #message {
+
+#message {
+  text-align: start;
   height: 170px;
 }
-.form #message::-moz-placeholder {
-  position: absolute;
-  bottom: 155px;
-}
-.form #message::placeholder {
-  position: absolute;
-  bottom: 155px;
-}
-.form .button-div {
+
+.button-div {
   display: flex;
   justify-content: center;
 }
-.form .form__button {
+
+.form__button {
   margin-top: 1rem;
   background: #bead8e;
   font-family: "Archivo", sans-serif;

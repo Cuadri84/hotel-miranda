@@ -113,57 +113,52 @@
   display: block;
   padding: 1rem;
   margin: 0 auto;
-  .hotel-img {
-    padding: 2%;
-    width: 100%;
-    max-width: 1050px;
-  }
+}
 
-  .form__item {
-    padding: 1rem;
-    background: #f8f8f8;
-    margin: 10px;
+.hotel-img {
+  padding: 2%;
+  width: 100%;
+  max-width: 1050px;
+}
 
-    .form__input {
-      border: transparent;
-      padding: 1rem;
-      background: #f8f8f8;
-      padding-left: 20px;
-      width: 90%;
-    }
-  }
-  .message-div {
-    display: flex;
-    align-items: flex-start;
-  }
-  #message {
-    height: 170px;
-  }
-  #message::placeholder {
-    position: absolute;
-    bottom: 155px;
-  }
+.form__item {
+  padding: 1rem;
+  background: #f8f8f8;
+  margin: 10px;
+}
 
-  .button-div {
-    display: flex;
-    justify-content: center;
-  }
+.form__input {
+  border: transparent;
+  padding: 1rem;
+  background: #f8f8f8;
+  padding-left: 20px;
+  width: 90%;
+}
 
-  .form__button {
-    margin-top: 1rem;
-    background: $beige-light;
-    font-family: $font-text;
-    color: $white;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 15px;
-    letter-spacing: 2.8px;
-    padding: 1rem 2rem;
-    border: none;
-    height: 60px;
-    width: 260px;
-  }
+#message {
+  text-align: start;
+  height: 170px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.form__button {
+  margin-top: 1rem;
+  background: $beige-light;
+  font-family: $font-text;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  padding: 1rem 2rem;
+  border: none;
+  height: 60px;
+  width: 260px;
 }
 
 @media screen and (min-width: 1000px) {
